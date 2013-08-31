@@ -1,8 +1,8 @@
 Suggestotron::Application.routes.draw do
-  resources :votes
 
-
-  resources :topics
+  resources :topics do
+    resources :votes
+  end
 
 
   # The priority is based upon order of creation:
